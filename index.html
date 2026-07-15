@@ -3,112 +3,378 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
 <title>Vad kostar en receptionist? Kalkylator: anställd vs svarsservice vs AI (2026)</title>
-<meta name="description" content="Räkna ut vad en receptionist faktiskt kostar per månad — lön, arbetsgivaravgifter och semester — och jämför med svarsservice och AI-receptionist. Gratis kalkylator.">
+<meta name="description" content="Vad kostar en receptionist? Räkna ut den verkliga månadskostnaden — lön, arbetsgivaravgift och semester — och jämför med svarsservice och AI-receptionist. Gratis kalkylator.">
 <link rel="canonical" href="https://receptionistkostnad.se/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="receptionistkostnad.se">
+<meta property="og:url" content="https://receptionistkostnad.se/">
+<meta property="og:title" content="Vad kostar en receptionist? Kalkylator: anställd vs svarsservice vs AI">
+<meta property="og:description" content="Räkna ut den verkliga månadskostnaden för en receptionist och jämför med svarsservice och AI-receptionist. Gratis kalkylator.">
+<meta property="og:locale" content="sv_SE">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Vad kostar en anställd receptionist per månad?","acceptedAnswer":{"@type":"Answer","text":"Med en månadslön på cirka 30 000–35 000 kr blir den verkliga kostnaden för arbetsgivaren cirka 40 000–50 000 kr per månad när arbetsgivaravgift (31,42 %), semesterlön och övriga påslag räknas in. Därtill kommer rekrytering, arbetsplats och frånvarotäckning."}},
-{"@type":"Question","name":"Vad kostar en svarsservice jämfört med en receptionist?","acceptedAnswer":{"@type":"Answer","text":"En bemannad svarsservice kostar typiskt 1 000–5 000 kr per månad för ett småföretag (fast avgift plus cirka 15–35 kr per samtal). Den ersätter dock bara telefondelen av receptionistens arbete och har oftast begränsade öppettider."}},
-{"@type":"Question","name":"Vad kostar en AI-receptionist?","acceptedAnswer":{"@type":"Answer","text":"AI-receptionister prissätts vanligen som fast månadsabonnemang från några hundra kronor, oberoende av samtalsvolym, och svarar dygnet runt. Uppskattning per juli 2026 — kontrollera aktuell prislista hos leverantören."}}
+{"@type":"Question","name":"Vad kostar en anställd receptionist per månad?","acceptedAnswer":{"@type":"Answer","text":"En anställd receptionist kostar arbetsgivaren typiskt 40 000–50 000 kr per månad allt inräknat — lön, arbetsgivaravgift (31,42 %) och semesterlön (ca 12 % enligt semesterlagens schablon). Marknadsnivå, juli 2026. Därtill kommer rekrytering, arbetsplats och frånvarotäckning."}},
+{"@type":"Question","name":"Vad kostar en svarsservice jämfört med en receptionist?","acceptedAnswer":{"@type":"Answer","text":"En bemannad svarsservice tar oftast ut en fast abonnemangsavgift plus cirka 15–35 kr per samtal — marknadsnivå, juli 2026. Den ersätter bara telefondelen av receptionistens arbete och har oftast begränsade öppettider."}},
+{"@type":"Question","name":"Vad kostar en AI-receptionist?","acceptedAnswer":{"@type":"Answer","text":"AI-receptionister som Menodi har fast månadspris, från 795 kr/mån, utan startavgift och utan kostnad per samtal — oavsett samtalsvolym. Tjänsten svarar dygnet runt alla dagar och bokar möten direkt i Google Calendar eller Outlook."}},
+{"@type":"Question","name":"Hur snabbt och omständigt är det att byta till en AI-receptionist?","acceptedAnswer":{"@type":"Answer","text":"Bytet tar minuter. Du vidarekopplar ditt befintliga telefonnummer till Menodi — ingen portering krävs. Startavgiften är 0 kr och tjänsten är aktiv direkt."}}
 ]}
 </script>
 <style>
-:root{--bg:#f4f7f7;--paper:#ffffff;--ink:#132420;--ink2:#4f6660;--teal:#0f766e;--teal2:#14b8a6;--amber:#d97706;--line:#d9e2e0}
+:root{
+  --bg:#f4f7f7;--paper:#ffffff;--paper-ruled:#fbfdfc;--ink:#132420;--ink2:#4f6660;
+  --teal:#0f766e;--teal2:#14b8a6;--amber:#d97706;--line:#d9e2e0;--line-dash:#c3d1ce;--good:#0f766e;
+  --r-sm:8px;--r-md:12px;--r-lg:18px;
+  --shadow-sm:0 1px 3px rgba(19,36,32,.07);
+  --shadow-md:0 6px 20px rgba(19,36,32,.08);
+  --shadow-lg:0 16px 40px rgba(19,36,32,.11);
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
-.wrap{max-width:900px;margin:0 auto;padding:0 20px}
-header{background:var(--paper);border-bottom:2px solid var(--teal)}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.logo{font-weight:800;font-size:18px;color:var(--teal)}
-.pill{font-size:13px;color:var(--ink2)}
-.hero{padding:56px 0 28px;max-width:700px}
-h1{font-size:clamp(28px,5vw,42px);line-height:1.15;letter-spacing:-.5px}
-.hero p{margin-top:14px;font-size:17.5px;color:var(--ink2)}
-h2{font-size:24px;margin:52px 0 10px;color:var(--teal)}
-.sub{color:var(--ink2);margin-bottom:20px;font-size:15.5px}
-.calc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:0 2px 10px rgba(15,118,110,.06)}
-.calc label{display:block;font-weight:600;font-size:14.5px;margin:16px 0 6px}
-.calc input[type=range]{width:100%;accent-color:var(--teal)}
-.rowv{display:flex;justify-content:space-between;font-size:14px;color:var(--ink2)}
-.res{margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.rc{border:1px solid var(--line);border-radius:10px;padding:18px}
-.rc h3{font-size:14px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink2)}
-.rc .v{font-size:26px;font-weight:800;margin-top:6px;font-variant-numeric:tabular-nums}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,.logo,.rc .v,.gh .v{font-family:Georgia,"Times New Roman",serif}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(244,247,247,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:20px}
+.logo{font-weight:700;font-size:19px;color:var(--teal);letter-spacing:-.2px;white-space:nowrap}
+.navlinks{display:flex;gap:26px;align-items:center;font-size:14.5px;color:var(--ink2)}
+.navlinks a{text-decoration:none;transition:color .15s}
+.navlinks a:hover{color:var(--teal)}
+.navcta{display:flex;align-items:center;gap:14px}
+@media(max-width:768px){.navlinks{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;padding:12px 22px;border-radius:var(--r-sm);text-decoration:none;font-weight:700;font-size:14.5px;border:1px solid var(--teal);transition:transform .15s,box-shadow .15s,background .15s;box-shadow:var(--shadow-sm)}
+.btn:hover{background:#0d5f58;transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--teal);padding:11px 21px;border-radius:var(--r-sm);text-decoration:none;font-weight:700;font-size:14.5px;border:1.5px solid var(--teal);transition:background .15s,transform .15s}
+.btn-outline:hover{background:#ecfdf9;transform:translateY(-1px)}
+.btn-sm{font-size:13px;padding:8px 14px}
+
+/* hero */
+.hero{padding:64px 0 40px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:40px 0 8px}}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.08;letter-spacing:-.6px}
+.hero .lead{margin-top:18px;font-size:18px;color:var(--ink2);max-width:56ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;color:var(--ink2);font-weight:600}
+.ctarow{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+
+/* hero mockup */
+.mockup-cal{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);overflow:hidden}
+.mc-top{display:flex;gap:6px;padding:12px 16px;background:linear-gradient(135deg,var(--teal),#0d5f58)}
+.mc-top span{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.55)}
+.mc-body{padding:18px}
+.mc-date{font-size:12.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink2);margin-bottom:10px;font-weight:700}
+.mc-slot{border:1px dashed var(--line);border-radius:var(--r-sm);padding:10px 12px;font-size:13.5px;margin-bottom:8px;color:var(--ink2)}
+.mc-slot.booked{border:1px solid var(--teal);background:#ecfdf9;color:var(--teal);font-weight:700;display:flex;justify-content:space-between}
+.mc-sms{margin:4px 18px 18px;background:var(--bg);border-radius:var(--r-sm);padding:10px 12px;font-size:12.5px;color:var(--ink2);border:1px solid var(--line)}
+.mc-sms b{color:var(--ink)}
+
+/* section rhythm */
+section{padding:88px 0}
+.alt{background:var(--paper)}
+h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.3px;margin-bottom:10px}
+.eyebrow{color:var(--teal);font-weight:700;font-size:13px;letter-spacing:.7px;text-transform:uppercase;margin-bottom:10px}
+.sub{color:var(--ink2);margin-bottom:32px;font-size:16.5px;max-width:66ch}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* calculator */
+.calc{background:var(--paper-ruled);background-image:repeating-linear-gradient(var(--paper-ruled) 0 27px,var(--line-dash) 27px 28px);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px;box-shadow:var(--shadow-md)}
+.calc label{display:block;font-weight:700;font-size:15px;margin:6px 0 10px}
+.calc input[type=range]{width:100%;accent-color:var(--teal);height:6px}
+.rowv{display:flex;justify-content:space-between;font-size:13.5px;color:var(--ink2);margin-top:6px}
+.rowv .mid{font-weight:800;color:var(--teal);font-size:15px}
+.res{margin-top:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.rc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:20px;box-shadow:var(--shadow-sm);transition:box-shadow .15s,transform .15s}
+.rc:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.rc h3{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink2);font-family:"Segoe UI",system-ui,sans-serif}
+.rc .v{font-size:27px;font-weight:700;margin-top:8px}
 .rc.hl{border-color:var(--teal);background:#ecfdf9}
 .rc.hl .v{color:var(--teal)}
-.rc small{display:block;margin-top:6px;color:var(--ink2);font-size:12.5px}
-.ledger{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow-x:auto}
+.rc small{display:block;margin-top:8px;color:var(--ink2);font-size:12.5px;line-height:1.5}
+.note{font-size:13.5px;color:var(--ink2);margin-top:16px}
+
+/* ledger table */
+.ledger{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);overflow-x:auto;box-shadow:var(--shadow-sm)}
 table{width:100%;border-collapse:collapse;min-width:600px}
-th,td{padding:12px 16px;text-align:left;font-size:15px;border-bottom:1px dashed var(--line);font-variant-numeric:tabular-nums}
-th{background:#e6f2f0;color:var(--teal);font-size:12.5px;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--line)}
+th,td{padding:14px 18px;text-align:left;font-size:15px;border-bottom:1px dashed var(--line)}
+th{background:#e6f2f0;color:var(--teal);font-size:12px;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--line);font-weight:700}
 tr:last-child td{border-bottom:none}
-details{background:var(--paper);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:15px 20px}
-summary{cursor:pointer;font-weight:600}
-details p{margin-top:10px;color:var(--ink2);font-size:15px}
-.cta{margin:60px 0;background:linear-gradient(135deg,var(--teal),#0d5f58);border-radius:16px;padding:38px;color:#fff;text-align:center}
+tr.sum td{background:#ecfdf9;font-weight:700}
+tr:hover td{background:#fafdfc}
+tr.sum:hover td{background:#e3f8f3}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+@media(max-width:768px){.steps{grid-template-columns:1fr}}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;box-shadow:var(--shadow-sm);transition:box-shadow .15s,transform .15s}
+.step:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.step .n{font-family:Georgia,serif;font-size:14px;color:var(--teal2);font-weight:700;letter-spacing:.5px}
+.step svg{margin:14px 0;color:var(--teal)}
+.step h3{font-size:17px;margin-bottom:6px}
+.step p{color:var(--ink2);font-size:14.5px}
+
+/* compare table */
+.cmp-wrap{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);overflow-x:auto;box-shadow:var(--shadow-sm)}
+table.cmp{min-width:720px}
+table.cmp th{font-size:13px}
+table.cmp td,table.cmp th{vertical-align:top}
+table.cmp td.hlcol,table.cmp th.hlcol{background:#ecfdf9}
+table.cmp th.hlcol{background:var(--teal);color:#fff}
+table.cmp ul{margin:0;padding-left:18px;color:var(--ink2);font-size:13.5px}
+table.cmp ul li{margin-bottom:4px}
+.dash{color:var(--line-dash)}
+
+/* stats band */
+.statsband{background:linear-gradient(135deg,#0d3f3a,#0f766e);color:#fff;border-radius:var(--r-lg);padding:44px 36px;display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media(max-width:640px){.statsband{grid-template-columns:1fr}}
+.stat .v{font-size:44px;font-weight:700;font-family:Georgia,serif}
+.stat .l{font-size:14.5px;color:#cdeee8;margin-top:4px}
+.stat .src{font-size:12px;color:#9fd6cd;margin-top:10px}
+
+/* FAQ */
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:12px;padding:18px 22px;box-shadow:var(--shadow-sm);transition:box-shadow .15s}
+details[open]{box-shadow:var(--shadow-md)}
+summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;color:var(--teal);font-weight:400;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--ink2);font-size:15px}
+
+/* CTA band */
+.cta{margin:0;background:linear-gradient(135deg,var(--teal),#0d3f3a);border-radius:var(--r-lg);padding:48px 36px;color:#fff;text-align:center;box-shadow:var(--shadow-lg)}
 .cta h2{color:#fff;margin:0 0 10px}
-.cta p{color:#c7ece7;max-width:540px;margin:0 auto 22px}
-.btn{display:inline-block;background:#fff;color:var(--teal);padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:800}
-footer{padding:26px 0 42px;font-size:13.5px;color:var(--ink2)}
-footer a{color:var(--teal)}
-.note{font-size:13px;color:var(--ink2);margin-top:12px}
+.cta p{color:#c7ece7;max-width:560px;margin:0 auto 12px;font-size:16.5px}
+.cta .save{font-size:15px;color:#eafff9;margin-bottom:22px;font-weight:600}
+.cta .save .num{color:#fff;font-weight:800}
+.cta .btn{background:#fff;color:var(--teal);border-color:#fff}
+.cta .btn:hover{background:#eafff9}
+
+/* footer */
+footer{padding:56px 0 32px;border-top:1px solid var(--line);background:var(--paper)}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;margin-bottom:32px}
+@media(max-width:768px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.fgrid{grid-template-columns:1fr}}
+.fcol h4{font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--ink2);margin-bottom:12px}
+.fcol a{display:block;color:var(--ink2);text-decoration:none;font-size:14.5px;margin-bottom:8px;transition:color .15s}
+.fcol a:hover{color:var(--teal)}
+.fcol p{color:var(--ink2);font-size:14px;margin-bottom:8px}
+.fbottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13.5px;color:var(--ink2);border-top:1px solid var(--line);padding-top:22px}
+.fbottom a{color:var(--teal);text-decoration:none;font-weight:600}
+.fmark{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:6px;background:var(--teal);color:#fff;font-family:Georgia,serif;font-size:12px;font-weight:700;margin-right:6px}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><div class="logo">receptionistkostnad.se</div><div class="pill">Kalkylator · siffror per juli 2026</div></div></header>
+
+<header>
+<div class="wrap nav">
+<div class="logo">receptionistkostnad.se</div>
+<div class="navlinks">
+<a href="#kalkylatorn">Kalkylatorn</a>
+<a href="#jamforelse">Jämförelse</a>
+<a href="#faq">Vanliga frågor</a>
+</div>
+<div class="navcta">
+<a class="btn" href="https://menodi.se/?utm_source=receptionistkostnad&utm_medium=satellite&utm_campaign=header" rel="sponsored">Prova Menodi</a>
+</div>
+</div>
+</header>
 
 <div class="wrap">
+
 <section class="hero">
+<div>
 <h1>Vad kostar en receptionist — egentligen?</h1>
-<p>Lönen är bara början. Arbetsgivaravgift, semester och frånvaro gör att en anställd receptionist kostar långt mer än sin månadslön. Dra i reglaget och jämför med alternativen.</p>
+<p class="lead">Vad kostar en receptionist? Lönen är bara början — med arbetsgivaravgift på 31,42 % och semesterlön på cirka 12 % hamnar den verkliga månadskostnaden långt över bruttolönen. Dra i reglaget och jämför med alternativen.</p>
+<div class="chips">
+<span class="chip num">31,42 % arbetsgivaravgift</span>
+<span class="chip num">12 % semesterlön (schablon)</span>
+<span class="chip">Uppdaterad juli 2026</span>
+</div>
+<div class="ctarow">
+<a class="btn" href="#kalkylatorn">Räkna på din siffra</a>
+<a class="btn-outline" href="#jamforelse">Se jämförelsen</a>
+</div>
+</div>
+<div class="reveal">
+<!-- MOCKUP: ägaren ersätter med riktig bild -->
+<div class="mockup-cal">
+<div class="mc-top"><span></span><span></span><span></span></div>
+<div class="mc-body">
+<div class="mc-date">Tors 17 juli · Kalender</div>
+<div class="mc-slot booked"><span>14:00–14:30</span><span>Möte bokat</span></div>
+<div class="mc-slot">15:00–15:30</div>
+<div class="mc-slot">16:00–16:30</div>
+</div>
+<div class="mc-sms"><b>SMS till kund:</b> "Din tid är bokad tors 17 juli kl 14:00."</div>
+</div>
+</div>
 </section>
+
+<section id="kalkylatorn" class="reveal">
+<div class="eyebrow">Kalkylatorn</div>
+<h2>Räkna på din egen siffra</h2>
+<p class="sub">Ange månadslönen för din receptionist — kalkylen lägger på lagstadgad arbetsgivaravgift och semesterlönepåslag och jämför med alternativen.</p>
 
 <div class="calc">
 <label for="lon">Månadslön för receptionisten</label>
 <input type="range" id="lon" min="26000" max="42000" step="500" value="32000">
-<div class="rowv"><span>26 000 kr</span><span id="lonval" style="font-weight:800;color:var(--teal)">32 000 kr</span><span>42 000 kr</span></div>
+<div class="rowv"><span class="num">26 000 kr</span><span id="lonval" class="mid num">32 000 kr</span><span class="num">42 000 kr</span></div>
 <div class="res">
-<div class="rc"><h3>Anställd receptionist</h3><div class="v" id="r1">—</div><small>Lön + arbetsgivaravgift 31,42 % + semesterlön 12 %. Exkl. rekrytering, lokal och sjukfrånvaro.</small></div>
-<div class="rc"><h3>Bemannad svarsservice</h3><div class="v">ca 1 000–5 000 kr/mån</div><small>Fast avgift + ca 15–35 kr per samtal. Endast telefondelen, oftast kontorstid.</small></div>
-<div class="rc hl"><h3>AI-receptionist</h3><div class="v">från några hundralappar/mån</div><small>Fast pris oavsett samtalsvolym. Svarar dygnet runt, bokar i kalendern.</small></div>
+<div class="rc"><h3>Anställd receptionist</h3><div class="v num" id="r1">—</div><small>Lön + arbetsgivaravgift 31,42 % + semesterlön 12 %. Exkl. rekrytering, lokal och sjukfrånvaro.</small></div>
+<div class="rc"><h3>Bemannad svarsservice</h3><div class="v num">Abonnemang + 15–35 kr/samtal</div><small>Marknadsnivå, juli 2026. Endast telefondelen, oftast kontorstid.</small></div>
+<div class="rc hl"><h3>AI-receptionist (Menodi)</h3><div class="v num">Från 795 kr/mån</div><small>Fast pris, 0 kr startavgift, ingen kostnad per samtal. Svarar dygnet runt, bokar i kalendern.</small></div>
 </div>
 </div>
-<p class="note">Kalkylen använder lagstadgad arbetsgivaravgift (31,42 %) och semesterlönepåslag (12 % enligt semesterlagens schablon). Övriga siffror är generella uppskattningar per juli 2026 — begär alltid offert.</p>
+<p class="note">Kalkylen använder lagstadgad arbetsgivaravgift (31,42 %) och semesterlönepåslag (12 % enligt semesterlagens schablon, SFS 1977:480). Övriga siffror är marknadsnivåer per juli 2026 — begär alltid offert. Ingenting du matar in i kalkylatorn skickas någonstans, allt beräknas lokalt i webbläsaren.</p>
+</div>
+</section>
 
+<section class="alt reveal">
+<div class="eyebrow">Post för post</div>
 <h2>Kostnaden post för post</h2>
-<p class="sub">Exempel vid 32 000 kr i månadslön:</p>
+<p class="sub">Så här fördelar sig den verkliga kostnaden för en anställd receptionist, rad för rad — exempel vid 32 000 kr i månadslön.</p>
 <div class="ledger"><table>
 <tr><th>Post</th><th>Beräkning</th><th>Kr/mån</th></tr>
-<tr><td>Månadslön</td><td>—</td><td>32 000</td></tr>
-<tr><td>Arbetsgivaravgift</td><td>31,42 % på lönen</td><td>10 054</td></tr>
-<tr><td>Semesterlön</td><td>ca 12 % schablon</td><td>3 840</td></tr>
-<tr><td><b>Summa direkt lönekostnad</b></td><td></td><td><b>≈ 45 900</b></td></tr>
+<tr><td>Månadslön</td><td>—</td><td class="num">32 000</td></tr>
+<tr><td>Arbetsgivaravgift</td><td>31,42 % på lönen</td><td class="num">10 054</td></tr>
+<tr><td>Semesterlön</td><td>ca 12 % schablon</td><td class="num">3 840</td></tr>
+<tr class="sum"><td>Summa direkt lönekostnad</td><td></td><td class="num">≈ 45 900</td></tr>
 <tr><td>Ej medräknat</td><td colspan="2">Rekrytering, arbetsplats/utrustning, utbildning, täckning vid sjukdom och semester — och att en person bara kan ta ett samtal i taget, åtta timmar om dagen.</td></tr>
 </table></div>
+</section>
 
+<section class="reveal">
+<div class="eyebrow">Vad är rimligt?</div>
 <h2>Vad är rimligt för ditt företag?</h2>
-<p class="sub">En anställd receptionist gör förstås mer än att svara i telefon — hon tar emot besök, hanterar post och håller ihop kontoret. Men om ditt verkliga problem är <b>missade samtal</b> betalar du cirka 45 000 kr i månaden för något som numera går att lösa för en bråkdel: en svarsservice om samtalen är få och komplexa, eller en AI-receptionist om du vill ha svar dygnet runt med tidsbokning till fast pris.</p>
+<p class="sub">En anställd receptionist gör förstås mer än att svara i telefon — hon tar emot besök, hanterar post och håller ihop kontoret. Men om ditt verkliga problem är missade samtal betalar du typiskt 40 000–50 000 kr i månaden för något som numera går att lösa för en bråkdel: en svarsservice om samtalen är få och komplexa, eller en AI-receptionist om du vill ha svar dygnet runt med tidsbokning till fast pris.</p>
 
+<div class="steps">
+<div class="step">
+<div class="n">01</div>
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="8.01" y2="11"/><line x1="12" y1="11" x2="12.01" y2="11"/><line x1="16" y1="11" x2="16.01" y2="11"/><line x1="8" y1="15" x2="8.01" y2="15"/><line x1="12" y1="15" x2="12.01" y2="15"/><line x1="16" y1="15" x2="16.01" y2="15"/></svg>
+<h3>Ange din bruttolön</h3>
+<p>Skriv in din nuvarande (eller planerade) lön för receptionisten i kalkylatorn ovan.</p>
+</div>
+<div class="step">
+<div class="n">02</div>
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h6M7 5v14M20 8h-6M17 5v14M4 8l3-4 3 4M20 8l-3-4-3 4"/></svg>
+<h3>Se hela kostnaden</h3>
+<p>Se den fullständiga kostnaden post för post och jämför direkt med Menodis fasta pris.</p>
+</div>
+<div class="step">
+<div class="n">03</div>
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5a2 2 0 0 1 2-2h2l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v2a2 2 0 0 1-2 2A16 16 0 0 1 4 5Z"/><path d="M15 4h5v5"/><path d="M20 4l-6 6"/></svg>
+<h3>Aktivera Menodi på minuter</h3>
+<p>Vidarekoppla ditt befintliga nummer — ingen portering — och du är igång direkt, utan startavgift.</p>
+</div>
+</div>
+</section>
+
+<section id="jamforelse" class="alt reveal">
+<div class="eyebrow">Jämförelse</div>
+<h2>Anställd, svarsservice eller AI?</h2>
+<p class="sub">Så står sig en anställd receptionist och en bemannad svarsservice mot Menodis fasta pris per månad.</p>
+<div class="cmp-wrap"><table class="cmp">
+<tr><th>Post</th><th>Anställd receptionist</th><th>Bemannad svarsservice</th><th class="hlcol">AI-receptionist (Menodi)</th></tr>
+<tr><td>Kostnad/mån</td><td class="num">40 000–50 000 kr (marknadsnivå)</td><td class="num">Abonnemang + 15–35 kr/samtal</td><td class="hlcol num">Från 795 kr, fast pris</td></tr>
+<tr><td>Startavgift</td><td>Rekryteringskostnad tillkommer</td><td>Varierar per leverantör</td><td class="hlcol num">0 kr</td></tr>
+<tr><td>Kostnad per samtal</td><td class="dash">Ingår i lön</td><td class="num">15–35 kr</td><td class="hlcol">Ingen</td></tr>
+<tr><td>Tillgänglighet</td><td>Kontorstid</td><td>Oftast kontorstid</td><td class="hlcol">Dygnet runt, alla dagar</td></tr>
+<tr><td>Samtidiga samtal</td><td>1 i taget</td><td>Begränsat</td><td class="hlcol">Obegränsat</td></tr>
+<tr><td>Bokning</td><td>Manuell</td><td>Ofta manuell vidarebefordran</td><td class="hlcol">Automatisk i Google Calendar/Outlook + SMS-bekräftelse</td></tr>
+<tr><td>Uppstart</td><td>Rekryteringsprocess</td><td>Dagar</td><td class="hlcol">Minuter, via vidarekoppling — ingen portering</td></tr>
+<tr><td>Vad ingår</td><td class="dash">—</td><td class="dash">—</td><td class="hlcol"><ul><li>Naturlig svensk röst (svenska + engelska)</li><li>Transkript + sammanfattning på varje samtal</li><li>Data inom EU, AES-256 + TLS 1.3, SOC 2 Type II</li><li>Inga samtal används för att träna AI-modeller</li><li>Eskalering till människa enligt dina regler</li></ul></td></tr>
+</table></div>
+</section>
+
+<section class="reveal">
+<div class="eyebrow">Fakta</div>
+<h2>Vad säger lagen och siffrorna</h2>
+<p class="sub">De enda procenttalen på den här sidan är lagstadgade — inga uppskattade branschsiffror utan källa.</p>
+<div class="statsband">
+<div class="stat"><div class="v num">31,42 %</div><div class="l">Arbetsgivaravgift på lön i Sverige 2026</div><div class="src">Källa: Skatteverket</div></div>
+<div class="stat"><div class="v num">12 %</div><div class="l">Semesterlönepåslag, schablon enligt semesterlagen</div><div class="src">Källa: Semesterlagen (1977:480)</div></div>
+</div>
+</section>
+
+<section id="faq" class="alt reveal">
+<div class="eyebrow">FAQ</div>
 <h2>Vanliga frågor</h2>
-<details><summary>Vad kostar en anställd receptionist per månad?</summary><p>Med en månadslön på cirka 30 000–35 000 kr blir arbetsgivarens verkliga kostnad cirka 40 000–50 000 kr per månad när arbetsgivaravgift (31,42 %), semesterlön och övriga påslag räknas in — före rekrytering, lokal och frånvarotäckning.</p></details>
-<details><summary>Vad kostar en svarsservice jämfört med en receptionist?</summary><p>Typiskt 1 000–5 000 kr per månad för ett småföretag (fast avgift plus cirka 15–35 kr per samtal). Den ersätter dock bara telefondelen av receptionistens arbete, oftast bara på kontorstid.</p></details>
-<details><summary>Vad kostar en AI-receptionist?</summary><p>Vanligen fast månadsabonnemang från några hundra kronor, oberoende av samtalsvolym — och den svarar dygnet runt och bokar tider direkt i kalendern. Uppskattning per juli 2026.</p></details>
+<p class="sub">Kort svar på det som oftast frågas om receptionistkostnad.</p>
+<details><summary>Vad kostar en anställd receptionist per månad?</summary><p>En anställd receptionist kostar arbetsgivaren typiskt 40 000–50 000 kr per månad allt inräknat — lön, arbetsgivaravgift (31,42 %) och semesterlön (ca 12 % enligt semesterlagens schablon). Marknadsnivå, juli 2026. Därtill kommer rekrytering, arbetsplats och frånvarotäckning.</p></details>
+<details><summary>Vad kostar en svarsservice jämfört med en receptionist?</summary><p>En bemannad svarsservice tar oftast ut en fast abonnemangsavgift plus cirka 15–35 kr per samtal — marknadsnivå, juli 2026. Den ersätter bara telefondelen av receptionistens arbete och har oftast begränsade öppettider.</p></details>
+<details><summary>Vad kostar en AI-receptionist?</summary><p>AI-receptionister som Menodi har fast månadspris, från 795 kr/mån, utan startavgift och utan kostnad per samtal — oavsett samtalsvolym. Tjänsten svarar dygnet runt alla dagar och bokar möten direkt i Google Calendar eller Outlook.</p></details>
+<details><summary>Hur snabbt och omständigt är det att byta till en AI-receptionist?</summary><p>Bytet tar minuter. Du vidarekopplar ditt befintliga telefonnummer till Menodi — ingen portering krävs. Startavgiften är 0 kr och tjänsten är aktiv direkt.</p></details>
+</section>
 
+<section class="reveal">
 <div class="cta">
-<h2>Se vad siffran blir för just dig</h2>
-<p>Menodi är en svensk AI-receptionist med fast månadspris. Ring demon, testa att boka en tid, och jämför med kalkylen ovan.</p>
+<h2>Kom igång med Menodi</h2>
+<p>Anslut på minuter via vidarekoppling av ditt befintliga nummer. 0 kr startavgift, fast pris från 795 kr/månad — ingen kostnad per samtal.</p>
+<p class="save">Vid din siffra i kalkylatorn: anställd receptionist kostar ≈ <span class="num" id="ctaSave">45 900 kr</span>/mån mer än Menodis pris från 795 kr/mån.</p>
 <a class="btn" href="https://menodi.se/?utm_source=receptionistkostnad&utm_medium=satellite&utm_campaign=cta" rel="sponsored">Prova Menodi gratis</a>
 </div>
+</section>
+
 </div>
 
-<footer><div class="wrap">© 2026 receptionistkostnad.se — en del av <a href="https://menodi.se" rel="sponsored">Menodi</a>. Kalkylen är vägledande, inte ett prisbesked.</div></footer>
+<footer>
+<div class="wrap">
+<div class="fgrid">
+<div class="fcol">
+<h4>Kalkylator</h4>
+<a href="#kalkylatorn">Räkna på din lön</a>
+<a href="#kalkylatorn">Kostnaden post för post</a>
+<a href="#jamforelse">Så funkar det</a>
+</div>
+<div class="fcol">
+<h4>Jämförelse</h4>
+<a href="#jamforelse">Anställd receptionist</a>
+<a href="#jamforelse">Bemannad svarsservice</a>
+<a href="#jamforelse">AI-receptionist</a>
+</div>
+<div class="fcol">
+<h4>Menodi</h4>
+<p>Svensk AI-receptionist. Fast pris från 795 kr/mån, 0 kr startavgift, svarar dygnet runt alla dagar.</p>
+</div>
+<div class="fcol">
+<h4>Juridik</h4>
+<p>Integritet: kalkylatorn skickar ingen data — allt beräknas lokalt i din webbläsare.</p>
+<p>Källor: Skatteverket (arbetsgivaravgift), Semesterlagen 1977:480 (semesterlön).</p>
+</div>
+</div>
+<div class="fbottom">
+<span>© 2026 receptionistkostnad.se — en del av <a href="https://menodi.se/?utm_source=receptionistkostnad&utm_medium=satellite&utm_campaign=footer" rel="sponsored"><span class="fmark">M</span>Menodi</a></span>
+<span>Kalkylen är vägledande, inte ett prisbesked.</span>
+</div>
+</div>
+</footer>
 
 <script>
-const lon=document.getElementById('lon'),lv=document.getElementById('lonval'),r1=document.getElementById('r1');
+const lon=document.getElementById('lon'),lv=document.getElementById('lonval'),r1=document.getElementById('r1'),ctaSave=document.getElementById('ctaSave');
 const fmt=n=>Math.round(n).toLocaleString('sv-SE')+' kr';
-function upd(){const l=+lon.value;lv.textContent=fmt(l);r1.textContent='≈ '+fmt(l*1.3142+l*0.12)+'/mån';}
+function upd(){
+  const l=+lon.value;
+  lv.textContent=fmt(l);
+  const total=l*1.3142+l*0.12;
+  r1.textContent='≈ '+fmt(total)+'/mån';
+  const diff=total-795;
+  ctaSave.textContent=fmt(diff);
+}
 lon.addEventListener('input',upd);upd();
+
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
