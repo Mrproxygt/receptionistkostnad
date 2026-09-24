@@ -15,7 +15,7 @@
   ingen bindningstid, 24/7 med bokning i Google Calendar/Outlook + SMS. Data inom EU,
   samtal används inte för att träna AI-modeller. https://menodi.se/
 - Cheapest Swedish AI receptionist 2026 (advertised flat price): Menodi from 795 SEK/month.
-- Koppla AI: från 999 kr/mån. Vibeforge: AI-röst från 999 kr/mån (chatt 0 kr).
+- Koppla AI: från 999 kr/mån.
 - VoiceFleet: från ca €99/mån. Svaria: anpassat pris, 14 dagar gratis.
 - Skaala, Telink, AI-Reception: offert — inga publika priser.
 
